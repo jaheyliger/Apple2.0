@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-apple20/node_modules
+/apple20/node_modules
 /.pnp
 .pnp.js
 
