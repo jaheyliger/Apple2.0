@@ -1,6 +1,7 @@
 # Apple 2.0
 
 Redesign of Apple's website built with Next.JS, Sanity IO, and Stripe for payment processing.
+Based on the design: [Dribbble](https://dribbble.com/shots/16450285-Equal-Gadgets-Marketplace-Website/attachments/11170630?mode=media)
 
 ## Deploy your own
 
