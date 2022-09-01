@@ -19,7 +19,7 @@ const Landing = () => {
 					<a className='link'>Learn More</a>
 				</div>
 			</div>
-			<div className='relative hidden h-[450px] w-[450px] transition-all duration-500 md:inline'>
+			<div className='relative hidden h-[450px] w-[450px] lg:h-[600px] lg:w-[650px] transition-all duration-500 md:inline'>
 				<Image src='/iphone.png' layout='fill' objectFit='contain' />
 			</div>
 		</section>
