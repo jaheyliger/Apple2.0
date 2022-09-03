@@ -1,10 +1,9 @@
-// import { ShoppingCartIcon } from '@heroicons/react/outline';
 import { ShoppingCartIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import React from 'react';
 import { urlFor } from '../sanity';
 import { useDispatch } from 'react-redux';
-// import { addToBasket } from '../redux/basketSlice';
+import { addToBasket } from '../redux/basketSlice';
 import toast from 'react-hot-toast';
 
 interface Props {
@@ -12,10 +11,10 @@ interface Props {
 }
 
 function Product({ product }: Props) {
-	// const dispatch = useDispatch();
+	const dispatch = useDispatch();
 
 	const addItemToBasket = () => {
-		// dispatch(addToBasket(product));
+		dispatch(addToBasket(product));
 
 		toast.success(`${product.title} added to basket`, {
 			position: 'bottom-center'
@@ -39,7 +38,9 @@ function Product({ product }: Props) {
 				</div>
 
 				<div
-					className='flex h-16 w-16 flex-shrink-0 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-pink-500 to-violet-500 md:h-[70px] md:w-[70px]'
+					className='flex h-16 w-16 flex-shrink-0 cursor-pointer items-center justify-center 
+					rounded-full bg-gradient-to-r from-pink-500 to-violet-500 md:h-[70px] md:w-[70px]
+					hover:scale-110 transition-all duration-300 active:scale-90'
 					onClick={addItemToBasket}
 				>
 					<ShoppingCartIcon className='h-8 w-8 text-white' />
